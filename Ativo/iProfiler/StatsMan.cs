@@ -49,7 +49,7 @@ namespace UnityEngine {
                 GUI.skin.box.CalcSize(new GUIContent(info))),
                 info);
         }
-
+        //I preferred to put this method inside the update method since it is called less often than the ongui method.
         private void Monitor() {
             float unscaledDeltaTime = Time.unscaledDeltaTime;
 
